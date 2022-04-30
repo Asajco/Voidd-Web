@@ -1,0 +1,146 @@
+.form-wrapper {
+  display: grid;
+  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-left: 40%;
+  outline: none;
+  animation: top_to_bottom 1s;
+}
+@keyframes top_to_bottom {
+  from {
+    margin-top: -100px;
+  }
+  to {
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
+  }
+}
+
+.input {
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+.cardNumber {
+  width: 20%;
+  padding: 5px;
+  margin: 10px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+
+.cv {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 26px;
+  border-radius: 5px;
+  width: 50px;
+  padding: 5px;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+.valid {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  width: 50px;
+  padding: 5px;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+.form-image {
+  background-image: url("../assets/images/form-background.jpeg");
+
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.membership-choosing {
+  width: 30%;
+  height: 100px;
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.form-membership-basic {
+  appearance: none;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: inline-grid;
+  place-content: center;
+}
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em grey;
+}
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+.form-button {
+  position: relative;
+  width: 40%;
+  padding: 10px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  margin-top: 8em;
+  margin-bottom: 4em;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.form-button:hover {
+  background-color: grey;
+  background-image: linear-gradient(to right, black, grey, black, grey, black);
+  color: white;
+}
+
+.legend {
+  font-size: 18px;
+  font-weight: initial;
+  color: transparent;
+  cursor: default;
+}

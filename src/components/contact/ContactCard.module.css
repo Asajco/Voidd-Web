@@ -1,0 +1,18 @@
+.card-wrapper{
+    width: 10em;
+    height: 15em;
+    background:
+        linear-gradient(to right,  #ed1b72 4px, transparent 4px) 0 0,
+        linear-gradient(to right,#f2d40d 4px, transparent 4px) 0 100%,
+        linear-gradient(to left, #90d36b 4px, transparent 4px) 100% 0,
+        linear-gradient(to left, #09b7bf 4px, transparent 4px) 100% 100%,
+        linear-gradient(to bottom,  #ed1b72 4px, transparent 4px) 0 0,
+        linear-gradient(to bottom, #90d36b 4px, transparent 4px) 100% 0,
+        linear-gradient(to top, #f2d40d 4px, transparent 4px) 0 100%,
+        linear-gradient(to top, #09b7bf 4px, transparent 4px) 100% 100%;
+    
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      margin-top: 4em;
+      
+}

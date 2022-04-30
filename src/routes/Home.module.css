@@ -1,0 +1,14 @@
+  .upcoming-events{
+  background-image: url(../assets/images/home-upcoming.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.trending-events{
+  background-color: white;
+  background-image: url(../assets/images/home-trending.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+

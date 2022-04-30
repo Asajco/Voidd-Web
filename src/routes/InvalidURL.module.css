@@ -1,0 +1,9 @@
+.invalid-url {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-weight: bold;
+    font-size: 30px;
+}

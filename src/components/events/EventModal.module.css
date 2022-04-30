@@ -1,0 +1,127 @@
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.modal {
+  width: 800px;
+  box-shadow: 0 0 0.5em black, 0 0 0 100vw rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.modal::backdrop {
+  opacity: 0;
+}
+
+.modal[open] {
+  animation: modal-fade-in 800ms forwards;
+}
+
+.modal[closing] {
+  animation: modal-fade-out 800ms forwards;
+}
+
+.modal-content {
+  background: linear-gradient(
+    135deg, grey,
+   darkgrey);
+  position: relative;
+  padding: 2em;
+}
+
+.close-button {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.modal-title {
+  margin: 0px 0px 1em 0px;
+  font-size: 1.4rem;
+}
+
+.modal-description {
+  margin-bottom: 1em;
+}
+
+.modal-main-info {
+  display: flex;
+}
+
+.modal-poster-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: white;
+  
+}
+.modal-poster {
+  width: 200px;
+}
+
+.modal-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.location {
+  font-weight: bold;
+}
+
+.date {
+  letter-spacing: 0.2em;
+  margin-bottom:  1.5em;
+}
+
+.genre, .price {
+  margin-bottom: 0.2em;
+}
+
+.sold-out {
+  font-weight: bold;
+}
+
+.modal-buy-ticket {
+  margin-top: 2em;
+}
+
+.modal-buy-ticket > button {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+  padding: 0.5em 1.5em;
+  font-weight: bold;
+  transition: scale 0.5s;
+}
+
+.modal-buy-ticket > button:hover, .modal-buy-ticket > button:active{
+  transform: scale(1.1)
+}

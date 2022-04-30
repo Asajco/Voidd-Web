@@ -1,0 +1,54 @@
+.pricing-container {
+  flex: 1;
+  background-image: url(../assets/images/pricing_background.png);
+  background-size: contain;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px){
+  .pricing-container{
+    display: inline-block;  
+    justify-content: center;
+    position: relative;
+  }
+}
+
+.pricing-features-list {
+  list-style-type: none;
+  margin: 2em 0px;
+  padding: 0px;
+  line-height: 30px;
+}
+.pricing-features-list > li {
+  line-height: 30px;
+}
+
+.pricing-line {
+  border: none;
+  height: 1px;
+  width: 80%;
+  background-color: white;
+}
+
+.pricing-card-title {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.pricing-price {
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+.pricing-btn {
+  width: 75%;
+  cursor: pointer;
+  border: 2px solid;
+  color: white;
+  background-color: inherit;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  margin-top: 16em;
+}

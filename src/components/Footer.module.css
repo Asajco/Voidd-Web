@@ -1,0 +1,28 @@
+.wrapper {
+  background-color: rgb(30,30,30);
+  color: white;
+  text-align: center;
+  position: relative;
+  border: none
+}
+.footer-heading {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 1.5rem 0px;
+}
+
+.footer-line {
+  width: 85%;
+  opacity: 0.8;
+}
+
+.footer-credits {
+  opacity: 0.5;
+  padding: 0.8em 0px 1.3em 0px;
+}
+
+.text-wrapper,
+.footer-credits {
+  font-size: 14px;
+}

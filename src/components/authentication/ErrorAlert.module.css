@@ -1,0 +1,17 @@
+.alert-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1.5px solid red;
+    font-size: 0.8rem;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.gg-close-o {
+    --ggs: 0.8;
+    color: red;
+    cursor: pointer;
+}

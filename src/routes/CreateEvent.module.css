@@ -1,0 +1,71 @@
+.form-wrapper{
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    margin-left:35%;    
+}
+.form-box-wrapper{
+    
+    margin: 40px 10px 10px 40px;
+}
+
+.form-image{
+    background-image: url("../assets/images/form-wallpaper.jpeg");
+    height: auto;   
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-button{
+    width: 50%;
+    margin: 40px;
+    padding: 10px;
+    transition: transform .2s;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    background-color: transparent;
+}
+.form-button:hover{
+    transform: scale(1.5);
+    
+}
+.form-label{
+    display: inline-block;
+    width: 180px;
+}
+.form-input{
+    width: 100px;
+    margin-left: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+.form-input:hover{
+    background-color: white;
+    opacity: 0.5;
+    color: black;
+}
+
+.form-error{
+    transition: tranform 1s;
+    opacity: 0.5;
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;
+}
+.form-poster{
+    margin-left: 10px;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    
+}

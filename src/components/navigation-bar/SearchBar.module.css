@@ -1,0 +1,134 @@
+.search-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3em;
+  width: 280px;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 35px;
+  background-color: white;
+  padding: 3px 10px;
+  width: 100%;
+  border: 1px solid #000000;
+  border-bottom: none;
+}
+
+.search-bar input {
+  border: none;
+  width: 85%;
+  height: 100%;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #827d7a;
+}
+
+.gg-search {
+  --ggs: 0.8;
+  color: #827d7a;
+}
+
+.search-bar button {
+  display: inline-flex;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 15%;
+  justify-content: right;
+}
+
+.search-result {
+  position: absolute;
+  max-height: 250px;
+  overflow-y: auto;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  color: black;
+  /* padding: 0px 1.2em 1em 1.2em; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid;
+  border-top: none;
+}
+
+.search-result::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+.search-result::-webkit-scrollbar-thumb {
+  background-color: rgb(189, 184, 184);
+  border-radius: 100vh;
+  border: 0.2em solid white;
+}
+
+.search-result ul {
+  padding: 0px;
+  margin: 0px 0px 0.5em 0px;
+  list-style-type: none;
+}
+
+.search-result li,
+.filter-string {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.search-result li > div, .filter-string p {
+  position: relative;
+  padding: 0.3em 1em;
+}
+
+.filter-string {
+  margin: 0px 0px 0.5em 0px;
+}
+
+.search-result li:hover,
+.search-list-element-current,
+.filter-string:hover {
+  background-color: rgba(150, 230, 246, 0.4);
+}
+
+.search-list-element-current > div::before, .search-list-element-current > p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 4px solid rgb(0, 140, 255);
+}
+
+.filter-section {
+  margin: 0px 1em;
+  display: flex;
+  align-items: center;
+}
+
+.filter-section:after{
+  content: "";
+  flex: 1;
+  border-top: 1px solid rgb(202, 190, 190);
+  margin: 4px 0px 0px 0px;
+}
+
+.search-result h5 {
+  margin: 0px 0.5em 0px 0px;
+  color: rgb(184, 172, 172);
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+
+.no-bottom-radius form {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}

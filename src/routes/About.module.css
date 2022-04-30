@@ -1,0 +1,80 @@
+.about-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../assets/images/about-wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: white;
+    height: calc(100vh - 65px);
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+div.par-wrapper {
+    width: 230px;
+    animation: right_to_left 2s;
+    background-color: transparent;
+    left: 0px;
+    margin-top: 90px;
+    margin-left: 15%;
+    height: auto;
+    text-align: justify;
+
+}
+
+@keyframes right_to_left {
+    from {
+      margin-left: -50%;
+    }
+    to {
+      margin-left: 15%;
+    }
+  }
+
+
+div.us-wrapper{
+    width: 230px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+    margin: 370px 15% 0 0px;
+    text-align: justify;
+    animation: left_to_right 2s ease;
+    
+}
+@keyframes left_to_right {
+    from {
+      margin-right: -50%;
+    }
+    to {
+      margin-right: 15%;
+    }
+  
+}
+.about-contact-wrapper{
+  text-align: center;
+  background-color:rgb(33, 33, 33);
+  justify-content: center;
+  padding-top: 20px;
+  color: white;
+}
+.about-contact-line{
+  height: 2px;
+  border: none;
+  background: linear-gradient(to right, #ed1b72,#fcb12b, #f2d40d, #90d36b, #09b7bf, #754fa0 )
+}
+
+.about-contact-wrapper p {
+  margin-bottom: 3em;
+  opacity: 0.5;
+}
+.about-contact-wrapper h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+

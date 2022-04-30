@@ -1,0 +1,45 @@
+.ticket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    padding: 1em;
+   
+    
+
+}
+
+.qr-code {
+    border-radius: 8px;
+    padding: 0.4em; 
+    background-color: white;
+    border: 4px solid rgb(18, 179, 18);
+}
+
+.border-invalid {
+    border-color: rgba(236, 11, 11, 0.945);
+}
+
+.qr-code img {
+    display: block;
+    width: 100px;
+}
+
+.ticket-description h3, p {
+    margin: 0
+}
+
+.ticket-description h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+.location {
+    font-weight: bold;
+    /* font-size: 1rem; */
+}
+
+.date {
+    letter-spacing: 0.2em;
+}

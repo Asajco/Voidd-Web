@@ -1,0 +1,104 @@
+.event-card {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    display: flex ;
+    gap: 3em;
+    padding: 2em;
+    border-radius: 8px;
+    margin: 0 1em;
+    height: 90%; 
+    margin-bottom: 3em;
+    background-color: rgba(255, 255, 255, 0.386);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+@media screen and (max-width: 600px){
+    .event-card{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        
+    }
+}
+@media screen and (max-height: 300px){
+    .event-card{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-info h3, p {
+    margin: 0
+}
+
+.event-info h3 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 1.3em;
+}
+
+.description {
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+
+.location {
+    font-weight: bold;
+}
+
+.date {
+    letter-spacing: 0.2em;
+    margin-bottom:  1.5em;
+}
+
+.genre, .price {
+    margin-bottom: 0.7em;
+}
+
+.event-img {
+    display: flex;
+    align-items: center;
+}
+
+
+.event-img img{
+    width: 340px;    
+}
+@media screen and (max-width: 900px){
+    .event-img img{
+        display: none;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-height: 300px){
+    .event-img img{
+        display: none;
+    }
+}
+
+
+.event-card-buttons {
+    align-self: start;
+    margin-top: 20px;
+}
+.event-card-buttons > button {
+    background-color: rgba(255, 255, 255, 0.221);
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform .2s;
+       
+}
+.event-card-buttons > button:hover{
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.591);
+}

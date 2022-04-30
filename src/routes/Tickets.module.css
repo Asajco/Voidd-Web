@@ -1,0 +1,39 @@
+.tickets-container {
+    flex: 1;
+    position: relative;
+    background-color: #312D2D;
+    background-image: url("../assets/images/tickets-background.jpeg");   
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+.ticker-light{
+    position: absolute;
+    max-width: 400px;
+    top: 0;
+}
+
+.tickets-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 1em;
+    list-style-type: none;
+    
+}
+
+.tickets-container ul li {
+    box-sizing: border-box;
+    border-bottom: 3px solid rgba(200, 200, 200);
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(79, 75, 75, 0.42);
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.highlighted-ticket {
+    box-shadow: 0 0 1em 0.4em #eee;
+}

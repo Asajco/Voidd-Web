@@ -1,0 +1,110 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu {
+  position: relative;
+  display: none;
+  margin-left: 7px;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+.nav-bar {
+  position: relative;
+  display: flex;
+  height: 65px;
+  padding: 0px 3rem;
+}
+
+.nav-bar a {
+  color: #f2edea; 
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+  border: none;
+  margin-right: 5rem;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.nav-bar > nav {
+  display: flex;
+  margin-right: auto;
+}
+
+.nav-bar > nav > a {
+  padding: 0 0.8rem;
+  transition: color 500ms, font-size 500ms;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar > nav a.active {
+  color: #d52d17;
+  border-bottom: solid 3px #d52d17;
+  font-size: 20px;
+}
+
+.nav-bar > nav a.inactive {
+  color: #f2edea;
+  font-size: 17px;
+}
+
+.nav-bar > nav .nav-link:active {
+  background-color: #474543;
+}
+
+.nav-login {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn:hover,
+.btn:hover a {
+  border-color: #c5c2c0;
+  color: #c5c2c0;
+}
+
+.btn-outlined {
+  border: 2px solid #f2edea;
+}
+
+.nav-bar,
+.btn,
+.logo {
+  background-color: #3b3938;
+  color: #f2edea;
+}
+@media screen and (max-width: 900px) {
+
+  .nav-bar {
+    padding-left: 0.5em;
+  }
+
+  .nav-bar > nav {
+    display: none;
+    height: 20%;
+  }
+  .menu {
+    display: block;
+  }
+}

@@ -1,0 +1,14 @@
+.contact-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60vh;
+    background-color: rgb(33, 33, 33);
+    color: honeydew;  
+}
+
+@media screen and (max-width: 600px){
+    .contact-wrapper{
+        display: inline-block;
+       
+    }
+}
